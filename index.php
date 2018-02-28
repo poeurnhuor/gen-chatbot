@@ -1,5 +1,7 @@
 <?php
 
+echo "Hello github2";
+
 $accessToken = "EAAdRg1oVYy4BAA3xgwWw6EKQ018pGvDAZBTZCrRVhjARULLzfQERaX3zri2K8UknLe3KcsKD5oWwF77yJBlKZCm360Y7bZAkSsBb1fViSIvFWZBRKbNOxuWCbHaGb1egDTKZBB0jnovEv3ZBgwNZBTJKoPnhBFXkIrqLtaatF3qHdi9fDt8JL4ZB0";
 
 if(isset($_REQUEST['hub_challenge'])){
