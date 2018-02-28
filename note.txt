@@ -1,0 +1,109 @@
+// set greeting message
+https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAHiKGZBBUhsBAJuZCR1tDt7vx6U3rgJJumk5GtWJrsaES2F8wApRR7eUzpRZB3cDbMskSGPh3GVuciKBdcwGB68B6hgXaHbjm6TzZCIwrFn9sEtvdIqT4HZCcCAzxnhI1BBzlHHOP5AHH4C2HvA2bRWiB2WYDZCrVFPkZB3DDpmiOLZAWDbZBZCj3
+
+params: {
+	"setting_type":"greeting",
+	"greeting":{
+		"text":"Hi my name is saraybio, you can ask me whatever about saray!"
+	}
+}
+
+//NEW
+https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAHiKGZBBUhsBAJuZCR1tDt7vx6U3rgJJumk5GtWJrsaES2F8wApRR7eUzpRZB3cDbMskSGPh3GVuciKBdcwGB68B6hgXaHbjm6TzZCIwrFn9sEtvdIqT4HZCcCAzxnhI1BBzlHHOP5AHH4C2HvA2bRWiB2WYDZCrVFPkZB3DDpmiOLZAWDbZBZCj3
+
+{"greeting":[
+  {
+    "locale":"default",
+    "text":"Hello!"
+  }, {
+    "locale":"en_US",
+    "text":"Timeless apparel for the masses."
+  }
+]
+}
+
+
+
+
+
+// get started button
+https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAHiKGZBBUhsBAJuZCR1tDt7vx6U3rgJJumk5GtWJrsaES2F8wApRR7eUzpRZB3cDbMskSGPh3GVuciKBdcwGB68B6hgXaHbjm6TzZCIwrFn9sEtvdIqT4HZCcCAzxnhI1BBzlHHOP5AHH4C2HvA2bRWiB2WYDZCrVFPkZB3DDpmiOLZAWDbZBZCj3
+
+
+params:
+{
+	"setting_type":"call_to_actions",
+	"thread_state":"new_thread",
+	"call_to_actions":[
+		{
+		"payload":"USER_FIRST_ENTER"
+		}
+		]
+}
+
+//NEW
+https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAHiKGZBBUhsBAJuZCR1tDt7vx6U3rgJJumk5GtWJrsaES2F8wApRR7eUzpRZB3cDbMskSGPh3GVuciKBdcwGB68B6hgXaHbjm6TzZCIwrFn9sEtvdIqT4HZCcCAzxnhI1BBzlHHOP5AHH4C2HvA2bRWiB2WYDZCrVFPkZB3DDpmiOLZAWDbZBZCj3
+
+{ 
+  "get_started":{
+    "payload":"GET_STARTED_PAYLOAD"
+  }
+}
+
+
+//persistent menu
+
+{
+  "persistent_menu":[
+    {
+      "locale":"default",
+      "composer_input_disabled": false,
+      "call_to_actions":[
+        {
+          "title":"My Account",
+          "type":"nested",
+          "call_to_actions":[
+            {
+              "title":"Pay Bill",
+              "type":"postback",
+              "payload":"PAYBILL_PAYLOAD"
+            },
+            {
+              "title":"History",
+              "type":"postback",
+              "payload":"HISTORY_PAYLOAD"
+            },
+            {
+              "title":"Contact Info",
+              "type":"postback",
+              "payload":"CONTACT_INFO_PAYLOAD"
+            }
+          ]
+        },
+        {
+          "type":"web_url",
+          "title":"Latest News",
+          "url":"http://www.messenger.com/",
+          "webview_height_ratio":"full"
+        },
+        {
+          "type":"web_url",
+          "title":"Latest News",
+          "url":"http://www.messenger.com/",
+          "webview_height_ratio":"full"
+        }
+      ]
+    },
+    {
+      "locale":"zh_CN",
+      "composer_input_disabled":false,
+      "call_to_actions":[
+        {
+          "title":"Pay Bill",
+          "type":"postback",
+          "payload":"PAYBILL_PAYLOAD"
+        }
+      ]    
+    }
+  ]
+}
