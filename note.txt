@@ -1,15 +1,15 @@
 // set greeting message
-https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAHiKGZBBUhsBAJuZCR1tDt7vx6U3rgJJumk5GtWJrsaES2F8wApRR7eUzpRZB3cDbMskSGPh3GVuciKBdcwGB68B6hgXaHbjm6TzZCIwrFn9sEtvdIqT4HZCcCAzxnhI1BBzlHHOP5AHH4C2HvA2bRWiB2WYDZCrVFPkZB3DDpmiOLZAWDbZBZCj3
+https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAALDUpemr1wBADXkix4Exhx4zpIFULLjOWNZAk9QZCY1VhZCpw73uSy0iRDBZAMPxzJjSYyCl9ICe9UQo5t2zw53LwoBO0GSga8pZCsyzcu82r8rQVLYvdwb3h5xGOidB6QSJq2kTZAqFtPfFo8lWjoinEpDUHWhZAFug4cbuOA7QZDZD
 
 params: {
 	"setting_type":"greeting",
 	"greeting":{
-		"text":"Hi my name is saraybio, you can ask me whatever about saray!"
+		"text":"Hi my name is Huor, you can ask me whatever about info!"
 	}
 }
 
 //NEW
-https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAHiKGZBBUhsBAJuZCR1tDt7vx6U3rgJJumk5GtWJrsaES2F8wApRR7eUzpRZB3cDbMskSGPh3GVuciKBdcwGB68B6hgXaHbjm6TzZCIwrFn9sEtvdIqT4HZCcCAzxnhI1BBzlHHOP5AHH4C2HvA2bRWiB2WYDZCrVFPkZB3DDpmiOLZAWDbZBZCj3
+https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAALDUpemr1wBADXkix4Exhx4zpIFULLjOWNZAk9QZCY1VhZCpw73uSy0iRDBZAMPxzJjSYyCl9ICe9UQo5t2zw53LwoBO0GSga8pZCsyzcu82r8rQVLYvdwb3h5xGOidB6QSJq2kTZAqFtPfFo8lWjoinEpDUHWhZAFug4cbuOA7QZDZD
 
 {"greeting":[
   {
@@ -22,13 +22,8 @@ https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAHiKGZBBUhsB
 ]
 }
 
-
-
-
-
 // get started button
-https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAHiKGZBBUhsBAJuZCR1tDt7vx6U3rgJJumk5GtWJrsaES2F8wApRR7eUzpRZB3cDbMskSGPh3GVuciKBdcwGB68B6hgXaHbjm6TzZCIwrFn9sEtvdIqT4HZCcCAzxnhI1BBzlHHOP5AHH4C2HvA2bRWiB2WYDZCrVFPkZB3DDpmiOLZAWDbZBZCj3
-
+https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAALDUpemr1wBADXkix4Exhx4zpIFULLjOWNZAk9QZCY1VhZCpw73uSy0iRDBZAMPxzJjSYyCl9ICe9UQo5t2zw53LwoBO0GSga8pZCsyzcu82r8rQVLYvdwb3h5xGOidB6QSJq2kTZAqFtPfFo8lWjoinEpDUHWhZAFug4cbuOA7QZDZD
 
 params:
 {
@@ -36,7 +31,7 @@ params:
 	"thread_state":"new_thread",
 	"call_to_actions":[
 		{
-		"payload":"USER_FIRST_ENTER"
+		"payload":"button_get_started"
 		}
 		]
 }
@@ -85,12 +80,6 @@ https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAHiKGZBBUhsB
           "title":"Latest News",
           "url":"http://www.messenger.com/",
           "webview_height_ratio":"full"
-        },
-        {
-          "type":"web_url",
-          "title":"Latest News",
-          "url":"http://www.messenger.com/",
-          "webview_height_ratio":"full"
         }
       ]
     },
@@ -103,7 +92,7 @@ https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAHiKGZBBUhsB
           "type":"postback",
           "payload":"PAYBILL_PAYLOAD"
         }
-      ]    
+      ]
     }
   ]
 }
